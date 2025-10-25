@@ -1,0 +1,206 @@
+/* ====== GLOBAL STYLES ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* ====== NAVBAR ====== */
+header {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #0a74da;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0a74da;
+}
+
+/* ====== HERO ====== */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80')
+              no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content span {
+  color: #0a74da;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0a74da;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #095cb0;
+}
+
+/* ====== SECTIONS ====== */
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #1e1e1e;
+  margin-bottom: 2rem;
+}
+
+/* ====== ABOUT ====== */
+.about p {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ====== PROJECTS ====== */
+.projects {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  color: #0a74da;
+  margin-bottom: 0.5rem;
+}
+
+.project-link {
+  color: #0a74da;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* ====== CONTACT ====== */
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.contact-btn {
+  background-color: #0a74da;
+}
+
+.contact-btn:hover {
+  background-color: #095cb0;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 3rem 1rem;
+  }
+}
