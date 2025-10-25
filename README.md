@@ -11,4 +11,4 @@ Follow these steps to run the portfolio locally:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+(https://github.com/Bharathchandrants/Sample-project-management.git)
